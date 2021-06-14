@@ -17,11 +17,6 @@ pipeline {
                 sh 'mvn test'
             }
         }
-		stage('deploy') {
-            steps {
-                echo 'Testing source'
-                sh 'mvn package'
-            }
-        }
+		
     }
 }
